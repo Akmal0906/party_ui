@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:party_ui/pages/home_page.dart';
+import 'package:party_ui/pages/part_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,8 +19,9 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const PartUI(),
       routes: {
+        PartUI.id:(context)=>const PartUI(),
         HomePage.id:(context)=>const HomePage(),
       },
     );
